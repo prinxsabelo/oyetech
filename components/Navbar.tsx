@@ -73,22 +73,23 @@ const Navbar = () => {
             </div>
             {sideNav&&(
                 <div className="lg:hidden fixed top-0 left-0 bottom-0 w-full h-screen bg-white border flex z-50">
-                    <div className="w-5/6 bg-white border  h-screen flex flex-col p-4 mb-8 space-y-4">
+                    <div className="w-5/6 bg-white border justify-between  h-screen flex flex-col p-4 lg:mb-8 space-y-4">
+                       <div>
                         <a href="index.html" className="navbar-brand d-block d-lg-none">
-                            <Image
-                                    src={removeBg}
-                                    alt="logo"
-                                    layout="responsive"
-                            />
-                        </a>
-                        <ul className="lg:hidden flex flex-col px-2 py-4 space-y-8">
-                            {navArr.map(item=>
-                                <li className="text-2xl"  key={item.id}>
-                                    <a href={item.link} className="">{item.name}</a>
-                                </li>    
-                            )}
-                        </ul>
-                        <div className="p-2  fixed bottom-0 right-0 bg-white left-0 ">
+                                <Image
+                                        src={removeBg}
+                                        alt="logo"
+                                />
+                            </a>
+                            <ul className="lg:hidden flex flex-col px-2 py-4 space-y-8">
+                                {navArr.map(item=>
+                                    <li className="text-2xl"  key={item.id}>
+                                        <a href={item.link} className="">{item.name}</a>
+                                    </li>    
+                                )}
+                            </ul>
+                       </div>
+                        <div className="p-2  bg-white">
                             <ButtonLink>
                                 Check for more blog
                             </ButtonLink>
