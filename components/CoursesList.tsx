@@ -17,7 +17,7 @@ const CoursesList = (props:any) => {
                     wow fadeIn'
                     data-wow-duration={`${index+1}s`}
                   >
-                <header className='flex flex-col space-y-2'>
+                <header className='flex flex-col px-4 space-y-2'>
                   <h3 className='uppercase text-2xl text-primary font-medium '> {item.title} </h3>
                   <div className='text-3xl lg:text-5xl text-primary font-semibold tracking-wider'>
                     &#8358;{item.onPrice}
@@ -60,7 +60,7 @@ const CoursesList = (props:any) => {
                     co-card rounded-2xl p-4 lg:rounded-3xl flex flex-col space-y-4 
                     wow fadeIn'
                     data-wow-duration={`${index+1}s`}>
-            <header className='flex flex-col space-y-2'>
+            <header className='flex flex-col px-4 space-y-2'>
               <h3 className='uppercase text-2xl text-primary font-medium tracking-wide'> {item.title} </h3>
               <div className='text-3xl lg:text-5xl text-primary font-semibold tracking-wider'>
                 &#8358;{item.offPrice}
