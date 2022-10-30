@@ -73,7 +73,7 @@ const Navbar = () => {
             </div>
             {sideNav&&(
                 <div className="lg:hidden fixed top-0 left-0 bottom-0 w-full h-screen bg-white border flex z-50">
-                    <div className="w-5/6 bg-white border justify-between  h-screen flex flex-col p-4 lg:mb-8 space-y-4">
+                    <div className="w-5/6 bg-white border space-y-8  h-screen flex flex-col p-4 lg:mb-8 space-y-4">
                        <div>
                         <a href="index.html" className="navbar-brand d-block d-lg-none">
                                 <Image
@@ -89,7 +89,7 @@ const Navbar = () => {
                                 )}
                             </ul>
                        </div>
-                        <div className="p-2  bg-white pb-24">
+                        <div className="p-2 ">
                             <ButtonLink>
                                 Check for more blog
                             </ButtonLink>
