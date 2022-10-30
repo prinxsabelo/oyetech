@@ -15,9 +15,7 @@ const Hero = () => {
                 <p className="lg:text-lg pr-2 lg:pr-2
                 wow fadeIn"  data-wow-duration="3s"
                 >
-                    We focus on providing excellent solutions to your digital
-                    problems by designing and developing newly
-                    conceptualized ideas.
+                   We concentrate on teaching you how to design and develop newly thought ideas in order to provide exceptional solutions to your digital challenges.
                 </p>
             </div>
             <div className="d-flex align-items-center wow fadeIn" data-wow-duration="4s">
