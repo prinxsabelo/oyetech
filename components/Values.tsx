@@ -18,8 +18,8 @@ const Values = () => {
         <div className='flex justify-between space-x-4 items-center flex-col lg:flex-row lg:flex-row-reverse'>
             <ul className='w-full  lg:w-1/2 flex flex-col   lg:mx-0 space-y-4  text-base 	'>
                 {arr.map(item=>
-                    <li key={item.id} className="flex flex-col space-y-2 border p-4 shadow wow fadeIn" >
-                        <div className='font-semibold uppercase text-sm'>{item.label} </div>
+                    <li key={item.id} className="flex flex-col space-y-2 border p-4 shadow-lg wow fadeIn" >
+                        <div className='font-semibold uppercase text-sm text-primary'>{item.label} </div>
                         <div className='text-base'>
                             {item.desc}
                         </div>

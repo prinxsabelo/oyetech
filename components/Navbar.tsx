@@ -77,8 +77,8 @@ const Navbar = () => {
                         <a href="index.html" className="navbar-brand d-block d-lg-none">
                             <Image
                                     src={removeBg}
-                                    alt="Picture of the author"
-                                
+                                    alt="logo"
+                                    layout="responsive"
                             />
                         </a>
                         <ul className="lg:hidden flex flex-col px-2 py-4 space-y-8">
