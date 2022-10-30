@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const Values = () => {
   const arr= [
-    {id:1,label:"Proactiveness",desc:"We position our customers at the center of our decisions to identify and tackle their pain points and take a step ahead to prevent future occurrences."},
+    {id:1,label:"Proactiveness",desc:"We position you at the center of our decisions to identify and tackle your pain points and take a step ahead to prevent future occurrences."},
         {id:2,label:"Insight-driven",desc:"We harness qualitative and quantitative insight to make more informed decisions and plan more robust strategies"},
-        {id:3,label:"Innovation",desc:"Our employees approach each day with an innovative mindset to enhance their creativity and organizational sustainability which does not only help them create new ideas/procedures but also focus and improve on existing ones."},
+        {id:3,label:"Innovation",desc:"Our tutors tackle each day with an inventive perspective to help you improve your creativity and build seamless solutions."},
         {id:4,label:"Simplicity",desc:"We take a simple approach to creating and implementing your ideas efficiently in terms of time and resources to ensure a quick, easy, and hassle-free experience."}
   
     ]
