@@ -100,15 +100,18 @@ const About = () => {
     }
   ]
   return (
-    <div className='bg-co py-12 lg:py-24 '>
+    <div className='bg-co py-12 lg:py-24'>
         <div className='text-center flex flex-col space-y-6 lg:space-y-6'>
             <div>
-                <h3 className='text-2xl lg:text-4xl text-white font-semibold'> Courses we offer</h3>
+                <h3 className='text-2xl lg:text-4xl text-white font-semibold wow fadeIn'> Courses we offer</h3>
             </div>
-              <ToggleSwitch  id="newsletter"
-                checked={courseType}
-                onChange={onCourseChange}
-              />
+              <div className='wow fadeIn' data-wow-duration="2s">
+                <ToggleSwitch  id="newsletter"
+                  checked={courseType}
+                  onChange={onCourseChange}
+                />
+              </div>
+              
               <CoursesList onArr={onArr} offArr={offArr} courseType={courseType} />
             
 

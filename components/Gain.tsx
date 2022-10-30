@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import BlackShake from '../styles/img/black-shake.jpg';
+import gainImg from '../styles/img/gainImg.png';
 const Gain = () => {
     const arr= [
         {id:1,label:"Training",desc:"You will be trained by experts for four months and Develop a lifelong pursuit of knowledge, understanding and wisdom."},
@@ -9,30 +9,36 @@ const Gain = () => {
         {id:4,label:"Certificate",desc:"You will be certified."}
     ]
   return (
-    <div className='flex flex-col flex-col-reverse space-y-4 lg:space-y-0 lg:flex-row items-center space-x-4'>
-        <div className="w-full lg:w-1/2 flex flex-col space-y-4" >
-            <div>
-                <h3 className='text-2xl font-semibold lg:text-4xl mt-8'> What You Will Gain</h3>
-            </div>
+    <div className='flex flex-col space-y-2 lg:space-y-6'>
+        <div className='wow fadeIn'>
+            <h3 className='text-2xl lg:text-center font-semibold lg:text-4xl mt-12'> What You Will Gain</h3>
+        </div>
+        <div className='flex w-full flex-col flex-col-reverse lg:flex-row lg:items-center'>
+            <div className="w-full lg:w-1/2 flex flex-col space-y-4" >
+            
             <ul className='flex flex-col  lg:mx-0 space-y-4  text-base lg:pr-4	'>
-                {arr.map(item=>
-                    <li key={item.id} className="flex flex-col space-y-2 border p-4 shadow" >
+                {arr.map((item,index)=>
+                    <li key={item.id} className="flex flex-col space-y-2 border p-4 shadow wow fadeIn"> 
                         <div className='font-semibold uppercase text-sm'>{item.label} </div>
                         <div className='text-base'>
-                             {item.desc}
+                                {item.desc}
                         </div>
-                       
+                        
                     </li>
                 )}     
             </ul>
+            </div>
+            <div className='h-full hidden lg:flex w-200 lg:w-1/2 flex mb-4 items-center lg:mb-0
+                wow fadeIn' data-wow-duration="2s">
+                <Image
+                    src={gainImg}
+                    className="rounded"
+                    alt="Partner2"
+                    placeholder='blur'
+                />
+            </div>
         </div>
-        <div className='h-full flex items-center relative top-10'>
-        <Image
-            src={BlackShake}
-           
-            alt="Partner2"
-        />
-        </div>
+        
        
     </div>  
   )

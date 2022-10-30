@@ -55,39 +55,7 @@ const Team = () => {
       <div>
         <h3 className='text-2xl font-semibold lg:text-4xl mt-8 text-center'>Meet Our Tutors</h3>
       </div>
-      <div className='flex flex-col lg:flex-row justify-between'>
-        {arr.map(item=>
-          <>
-              <div className='text-center  flex-col hidden lg:flex' style={{width:'15%'}}>
-                  <div>
-                    <Image  width={100} height={100} src={item.tutorImage}  alt="Partner2"  />
-                  </div>
-                  <div className='text-xl font-semibold'>
-                    {item.name}
-                  </div>
-                  <div className='text-base font-medium'>
-                    {item.role}
-                  </div>
-                
-              </div>
-              <div className='w-full lg:hidden flex flex-col 
-                        justify-center items-center space-y-1 border-b shadow py-4'> 
-                  <div>
-                    <Image  width={150} height={150} src={item.tutorImage}  alt="Partner2"  />
-                  </div>
-                  <div className='text-xl font-semibold'>
-                    {item.name}
-                  </div>
-                  <div className='text-base font-medium'>
-                    {item.role}
-                  </div>
-              </div>
-          </>
-        
-          )}
-
-      </div>
-
+     
     </div>
 
   )

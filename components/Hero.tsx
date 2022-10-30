@@ -7,27 +7,31 @@ const Hero = () => {
     <div className='mt-28 lg:mt-30 flex flex-col lg:flex-row items-center space-y-8 md:space-y-0'>
         <div className='w-full lg:w-1/2 flex flex-col space-y-4 lg:space-y-8'>
             <div className="testimonial-item text-start">
-                <h1 className="text-4xl lg:text-6xl mb-2 mt-2 font-bold leading-tight">
-                    We Offer<br/>
-                    Digital <span className="text-primary">trainings</span>
+                <h1 className="text-4xl lg:text-6xl mb-2 mt-2 font-bold leading-tight 
+                    " >
+                    <span className='wow fadeIn' data-wow-duration="1s"> We Offer<br/></span>
+                    <span className='wow fadeIn' data-wow-duration="2s" > Digital <span className="text-primary">trainings</span> </span>
                 </h1>
-                <p className="lg:text-lg pr-2 lg:pr-6">
+                <p className="lg:text-lg pr-2 lg:pr-2
+                wow fadeIn"  data-wow-duration="3s"
+                >
                     We focus on providing excellent solutions to your digital
                     problems by designing and developing newly
                     conceptualized ideas.
                 </p>
             </div>
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center wow fadeIn" data-wow-duration="4s">
                 <ButtonLink>
                      Get Started
                 </ButtonLink>
             </div>
         </div>
-        <div className='w-full lg:w-1/2'>
+        <div className='w-full lg:w-1/2  wow fadeIn'  data-wow-duration="5s">
          <Image
                 src={HeroImg}
                 alt="Hero"
-                 
+                placeholder='blur'
+               
             />
         </div>
     </div>

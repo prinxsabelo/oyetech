@@ -11,11 +11,14 @@ const CoursesList = (props:any) => {
         
     {courseType === 'on' ?
       <>
-       {onArr.map((item:any) =>
+       {onArr.map((item:any,index:any) =>
             <div key={item.id} className='w-full p-2 lg:m-0 flex-none text-left bg-white
-                    co-card rounded-2xl p-4 lg:rounded-3xl flex flex-col space-y-4   '>
+                    co-card rounded-2xl p-4 lg:rounded-3xl flex flex-col space-y-4   
+                    wow fadeIn'
+                    data-wow-duration={`${index+1}s`}
+                  >
                 <header className='flex flex-col space-y-2'>
-                  <h3 className='uppercase text-2xl text-primary font-medium tracking-wide'> {item.title} </h3>
+                  <h3 className='uppercase text-2xl text-primary font-medium '> {item.title} </h3>
                   <div className='text-3xl lg:text-5xl text-primary font-semibold tracking-wider'>
                     &#8358;{item.onPrice}
                   </div>
@@ -42,7 +45,7 @@ const CoursesList = (props:any) => {
                     
                 </div>
                 <footer>
-                  <ButtonLink className="w-full">
+                  <ButtonLink className="w-full block text-center">
                         Get Started
                   </ButtonLink>
                 
@@ -52,9 +55,11 @@ const CoursesList = (props:any) => {
       </>    
       :
       <>
-        {offArr.map((item:any) =>
+        {offArr.map((item:any,index:any) =>
           <div key={item.id} className='w-full lg:m-0 flex-none text-left bg-white
-                    co-card rounded-2xl p-4 lg:rounded-3xl flex flex-col space-y-4   '>
+                    co-card rounded-2xl p-4 lg:rounded-3xl flex flex-col space-y-4 
+                    wow fadeIn'
+                    data-wow-duration={`${index+1}s`}>
             <header className='flex flex-col space-y-2'>
               <h3 className='uppercase text-2xl text-primary font-medium tracking-wide'> {item.title} </h3>
               <div className='text-3xl lg:text-5xl text-primary font-semibold tracking-wider'>
@@ -79,7 +84,7 @@ const CoursesList = (props:any) => {
                     )}
             </div>
       <footer>
-        <ButtonLink className="w-full">
+        <ButtonLink className="w-full block text-center">
               Get Started
         </ButtonLink>
 

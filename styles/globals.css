@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: 'DM Sans', sans-serif;
+
+}
 /********** Template CSS **********/
 :root {
   --primary: #6722B5;

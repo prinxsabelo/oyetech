@@ -29,7 +29,7 @@ const Partners = () => {
    
 
   return (
-    <>
+    <div className='wow fadeIn'>
         <div className='lg:hidden'>
             <Slider {...settings}>
                 <div className='  m-2  mr-2 lg:mr-1 h-8 p-8 flex justify-center items-center relative'>
@@ -38,6 +38,8 @@ const Partners = () => {
                         layout="fill" // required
                         objectFit="contain"
                         alt="Partner1"
+                        placeholder='blur'
+
                     />
                 </div>
                 <div className='  m-2  mr-2 lg:mr-1 h-8 p-8 flex justify-center items-center relative'>
@@ -46,6 +48,8 @@ const Partners = () => {
                         layout="fill" // required
                         objectFit="contain"
                         alt="Partner2"
+                        placeholder='blur'
+
                     />
                 </div>
                 <div className='  m-2  mr-2 lg:mr-1 h-8 p-8 flex justify-center items-center relative'>
@@ -54,6 +58,8 @@ const Partners = () => {
                         layout="fill" // required
                         objectFit="contain"
                         alt="Partner4"
+                        placeholder='blur'
+
                     />
                 </div>
                 <div className='  m-2  mr-2 lg:mr-1 h-8 p-8 flex justify-center items-center relative'>
@@ -62,6 +68,8 @@ const Partners = () => {
                         layout="fill" // required
                         objectFit="contain"
                         alt="Partner3"
+                        placeholder='blur'
+
                     />
                 </div>
 
@@ -73,7 +81,8 @@ const Partners = () => {
                 
         </div>
         <div className='hidden lg:flex border-t border-b py-2'>
-        <div className='w-1/4 m-2  p-8 flex justify-center items-center relative'>
+        <div className='w-1/4 m-2  p-8 flex justify-center items-center relative wow fadeIn'
+        >
                     <Image
                         src={part1}
                         layout="fill" // required
@@ -108,7 +117,7 @@ const Partners = () => {
                 </div>
 
         </div>
-    </>
+    </div>
   )
 }
 
