@@ -89,7 +89,7 @@ const Navbar = () => {
                                 )}
                             </ul>
                        </div>
-                        <div className="p-2  bg-white pb-16">
+                        <div className="p-2  bg-white pb-24">
                             <ButtonLink>
                                 Check for more blog
                             </ButtonLink>
